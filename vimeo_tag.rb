@@ -1,4 +1,4 @@
-# A Liquid tag rof Jekyll sites that allows embedding vimeo movies
+# A Liquid tag for Jekyll sites that allows embedding vimeo movies
 # by: Gosuke Miyashita
 #
 # Example usage: {% vimeo 28040685 800 600 %}

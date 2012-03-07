@@ -22,7 +22,7 @@ require 'exifr'
 
 module Jekyll
 
-  class ImageTag < Liquid::Tag
+  class ImageWithExifTag < Liquid::Tag
     @img = nil
 
     def initialize(tag_name, markup, tokens)
@@ -64,4 +64,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('img_with_exif', Jekyll::ImageTag)
+Liquid::Template.register_tag('img_with_exif', Jekyll::ImageWithExifTag)

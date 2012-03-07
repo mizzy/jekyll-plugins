@@ -16,7 +16,7 @@ module Jekyll
     def render(context)
       exif = EXIFR::JPEG::new(@image_file)
       <<-HTML
-焦点距離 #{exif.focal_length.to_i} mm F#{sprintf "%.1f", exif.f_number.to_f} #{exif.model} ISO #{exif.iso_speed_ratings} #{exif.exposure_time.to_i} 秒露光
+焦点距離 #{exif.focal_length.to_i} mm F#{sprintf "%.1f", exif.f_number.to_f} #{exif.model} ISO #{exif.iso_speed_ratings} #{exif.exposure_time.to_i} 秒露光 #{exif.date_time_original}
       HTML
     end
   end
